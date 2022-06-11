@@ -1,0 +1,32 @@
+mixin profile__main(show)
+  .profile__main
+    .block.block_photo
+      .block_photo__image
+        img(src="images/photo_big.jpeg", alt="")
+
+      .mobile-visible
+        .block_photo__header
+          h1 Константин Константинович Константинопольский
+          include ../blocks/like-btn 
+
+    if show
+      button.button.button_edit
+        | Редактировать профиль, настроить цвет или приватность
+    
+    .block.block_list.desktop-visible
+      h3 Компания
+      ul
+        li 
+          a(href="#") 
+            span Студия Лебедева
+        li 
+          a(href="#") 
+            span Веб
+        li 
+          a(href="#") 
+            span Группа Арон
+      ul
+        li
+          a(href="#").module__open(data-module="hire")
+            span Информация о найме
+

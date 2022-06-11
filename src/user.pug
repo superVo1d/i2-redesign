@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/index.css")
+    script(src="https://code.jquery.com/jquery-3.6.0.slim.min.js", integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=", crossorigin="anonymous")
+    title Интранет / Люди / Далер Сухробович Алиёров
+  body
+    header
+      include blocks/nav.pug
+
+    main
+      include blocks/nav-btn.pug
+
+      section
+        .profile.container
+
+          .row
+            .col-xs-12.col-sm-4
+              include mixins/profile__main
+              +profile__main(true)
+
+            .col-xs-12.col-sm-8
+              include blocks/profile__person.pug
+              
+              .desktop-visible
+                include blocks/profile__about.pug
+
+      //section
+        include blocks/events-edit.pug
+
+      section.desktop-visible
+        .profile.container
+          .row
+            .col-xs-12.col-sm-4
+              include blocks/profile__company.pug
+
+            .col-xs-12.col-sm-8
+              include blocks/profile__details.pug
+              include blocks/profile__competitions.pug
+
+      section.mobile-visible
+        include blocks/tabs.pug
+      
+      //section
+        include blocks/recommended.pug
+
+    script(src="js/likes.js")
+    script(src="js/nav-btn.js")
+    script(src="js/qr.js")
+    script(src="js/tabs.js")
+    //script(src="js/events.js") 
+
+  .related

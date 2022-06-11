@@ -1,0 +1,27 @@
+.person.container
+  .row
+    .col-xs-12.person__card
+      .person__preview
+        .person-online
+        img(src="images/photo.jpeg", alt="")
+      .person__info
+        .person__name.desktop-visible
+          h1 Константин Константинович Константинопольский
+
+        p.person__position
+          span Менеджер&nbsp;&nbsp;
+          span ·&nbsp;4&nbsp;грейд&nbsp;·&nbsp;&nbsp;
+          |
+          span
+            | участвует в 
+            a(href="#") 158&nbsp;проектах
+          span 
+            | автор 
+            a(href="#") 
+              nobr 42&nbsp;мыслей в&nbsp;мозге
+
+        p.person__vacation
+          | В отпуске с 11 по 16 мая
+
+      .desktop-visible
+        include like-btn

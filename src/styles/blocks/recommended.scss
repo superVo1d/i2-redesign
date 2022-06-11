@@ -1,0 +1,141 @@
+.recommended {
+	margin-top: 9.5rem;
+	overflow: hidden;
+
+	@media (max-width: 768px) {
+		margin-top: 2rem;
+	}
+
+	&__header {
+		position: relative;
+
+		.show-hidden {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: $color-white;
+			border-radius: 1.08rem;
+    	cursor: pointer;
+    	height: 2.16rem;
+    	font-size: $font-size;
+
+    	> span {
+    		margin: 0 .84rem;
+    		line-height: 2.16rem;
+    	}
+
+    	@media (max-width: 992px) {
+        position: static;
+        display: inline-block;
+      }
+
+		}
+	}
+
+	&__list {
+		font-size: 0;
+		margin-top: 1.8rem;
+		white-space: nowrap;
+
+		.card {
+			position: relative;
+			cursor: pointer;
+			vertical-align: top;
+			display: inline-block;
+			padding: 1.6rem;
+			margin: .625rem;
+			width: 23.3rem;
+			height: 23.3rem;
+			background: $color-white;
+			border-radius: $border-radius / 2;
+			border-bottom: none !important;
+
+			&:hover {
+				border-bottom: none;
+			}
+
+			@media (max-width: 768px) {
+				width: calc(100% - 3.2rem);
+				margin-right: 0;
+				margin-left: 0;
+			}
+
+			&-profile {
+				white-space: normal;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				font-size: 1.36rem;
+    		line-height: 1.7408rem;
+
+				img {
+					border-radius: 50%;
+					width: 5.5rem;
+					height: 5.5rem;
+				}
+
+				> div {
+					padding: .4rem 1.25rem;
+				}
+
+				&__name {
+					font-size: 1.36rem;
+    			line-height: 1.6rem;
+    			font-weight: 600;
+				}
+				&__position {
+				margin-top: .5rem;
+					font-size: 1.112rem;
+    			line-height: 1.1875rem;
+				}
+			}
+
+			&-description {
+				white-space: normal;
+				margin-top: 2.6rem;
+				margin-bottom: 1.5rem;
+
+				&__item {
+					margin-bottom: 1.5rem;
+				}
+
+				&__name {
+					font-size: 1.112rem;
+    			line-height: 1.1875rem;
+    			opacity: .5;
+				}
+
+				&__value {
+					margin-top: 0.4rem;
+					font-size: 1.36rem;
+    			line-height: 1.7408rem;
+				}
+			}
+		}
+	}
+
+
+  &__controls {
+    margin-top: 2rem;
+
+    .arrow {
+      display: inline-block;
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+
+      &.disabled {
+	    	opacity: .5;
+	    	cursor: auto;
+	    }
+
+      &_left {
+        background: url('./../images/svg/arrow-left.svg') no-repeat;
+      }
+
+      &_right {
+        background: url('./../images/svg/arrow-right.svg') no-repeat;
+      }
+    }
+  }
+}

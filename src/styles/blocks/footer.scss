@@ -1,0 +1,29 @@
+.footer {
+	color: $color-grey;
+	width: 100%;
+	margin-top: 1rem;
+
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 1.12rem;
+    line-height: 1.7408rem;
+
+	> div {
+		margin-top: 0.5rem;
+	}
+
+ 	a {
+ 		font-size: 1.12rem;
+ 		line-height: 1.7408rem;
+ 	}
+
+	@media (max-width: 1350px) {
+		flex-direction: column;
+		align-items: center;
+
+		> div {
+			text-align: center;
+		}
+	}
+}

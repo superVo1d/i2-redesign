@@ -1,0 +1,139 @@
+.like-btn {
+
+	&__icon {
+      height: 35px;
+      width: 38px;
+      background: url('./../images/svg/heart.svg');
+      background-size: 100%;
+	}
+
+	&.active {
+		.like-btn__icon {
+      background: url('./../images/svg/heart-active.svg');
+      background-size: 100%;
+		}
+		.value {
+      color: $color-white;
+    }
+	}
+
+  padding-top: .5rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__content {
+    display: inline-block;
+    position: absolute;
+    top: .7rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: .3rem 0;
+    box-sizing: border-box;
+    user-select: none;
+
+    .value {
+    	display: block;
+      position: relative;
+      font-size: .95rem;
+      color: $color-red;
+    }
+  }
+
+	.likes-list {
+	  position: absolute;
+	  z-index: 13;
+	  right: 0;
+	  top: calc(35px + 1rem);
+
+	  width: 300px;
+
+	  display: none;
+
+	  transform: translateX(calc(50% - 19px));
+
+	  @media (max-width: 1350px) {
+	    transform: none;
+	  }
+
+	  @media (max-width: 1024px) {
+	    left: auto !important;
+	  }
+
+	  @media (max-width: 1024px) {
+	    left: auto !important;
+	  }
+
+	  &__content {
+	    background: $color-white;
+	    color: $color-black;
+	    border-radius: $border-radius / 4;
+	    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.05);
+	    position: relative;
+	    top: 0;
+	    overflow: hidden;
+	  }
+
+	  &__person {
+	    display: flex;
+	    align-items: center;
+	    padding: 0.4rem 0.7rem;
+	    text-align: left;
+
+	    cursor: pointer;
+
+	    color: $color-black;
+
+	    &:hover {
+	      background-color: $color-lightgrey;
+
+	      a {
+	        border-bottom: 1px solid $color-black !important;
+	      }
+	    }
+
+	    img {
+	      width: 27px;
+	      height: 27px;
+	      border-radius: 50%;
+	      margin-right: 0.5rem;
+	    }
+
+	    a {
+	      font-size: 1.112rem;
+	      line-height: 1.1875rem;
+	    }
+	  }
+
+	  ul {
+	    overflow-y: auto;
+	    max-height: 165px;
+	    padding-bottom: 0.8rem;
+
+	    &::-webkit-scrollbar {
+	      width: .8rem;
+	    }
+
+	    &::-webkit-scrollbar-track {
+	      background: $color-white;
+	    }
+
+	    &::-webkit-scrollbar-thumb {
+	      background-color: rgba(0,0,0,.21);
+	      border-radius: 30px;
+	      border: 3px solid $color-white;
+	      box-sizing: border-box;
+
+	    }
+	  }
+	} 
+}

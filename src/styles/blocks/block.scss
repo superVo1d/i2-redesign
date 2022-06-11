@@ -1,0 +1,90 @@
+.block {
+  background: $color-white;
+  border-radius: $border-radius;
+  margin-bottom: 1.125rem;
+  padding: 1.6rem 2.1rem;
+
+  > div {
+    position: relative;
+  }
+
+  &_list {
+    ul {
+      margin-top: 1.5rem;
+      margin-right: -0.8rem;
+      margin-left: -0.8rem;
+    }
+    ul li {
+      display: inline-block;
+      height: 2.8rem;
+      line-height: 2.8rem;
+      margin-bottom: 0.2rem;
+      margin-right: 0.2rem;
+      border-radius: 1.4rem;
+      border-radius: 1.4rem;
+      transition: 200ms background ease-in-out;
+      overflow: hidden;
+
+      > span {
+        display: block;
+        padding: 0 0.8rem;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        border-bottom: none !important;
+      }
+
+      a {
+        display: block;
+        cursor: pointer;
+        padding: 0 0.8rem;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        border-bottom: none !important;
+
+        &:hover {
+          background: $color-lightgrey;
+        }
+
+        > span {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+        }
+
+        &:hover > span {
+          border-bottom: 1px solid $color-black !important;
+        }
+      }
+    }
+  }
+
+  &.time > h2 {
+    margin-top: 1.28rem;
+    margin-bottom: 0;
+  }
+
+  p.description {
+    margin-bottom: 1.28rem;
+    opacity: .5;
+  }
+
+  .table {
+    margin-top: 1.8rem;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .label {
+      text-align: right;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

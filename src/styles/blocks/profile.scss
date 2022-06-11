@@ -1,0 +1,98 @@
+.profile {
+  position: relative;
+
+  .row > div {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  &__main {
+    .block_photo {
+      padding: 0;
+      position: relative;
+
+      &__image {
+        border-radius: $border-radius;
+        overflow: hidden;
+
+        > img {
+          width: 100%;
+          height: auto;
+          display: block;
+
+          @media (max-width: 767px) {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+          }
+        }
+
+        @media (max-width: 767px) {
+          position: relative;
+          width: 100%;
+          padding-bottom: 100%;
+          overflow: hidden;
+        }
+      }
+
+      &__header {
+        position: absolute;
+        bottom: 0;
+        color: $color-white;
+        margin: 1rem 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > h1 {
+          margin-right: calc(38px + 1rem);
+
+          @media (max-width: 450px) {
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+        }
+
+        .like-btn {
+          margin-top: 0;
+
+          .like-btn__icon {
+            filter: brightness(0) invert(1);
+          }
+          
+          .likes-list {
+            transform: scale(1);
+          }
+
+          .value {
+            color: $color-white;
+          }
+
+          &.active {
+            .value {
+              mix-blend-mode: exclusion;
+              color: $color-white;
+            }
+          }
+
+          @media (max-width: 450px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    
+    .button {
+      width: 100%;
+      margin-bottom: 1.125rem;
+      padding: 1.92rem 2rem;
+      font-size: 1.36rem;
+      line-height: 1.7408rem;
+    }
+  }
+}

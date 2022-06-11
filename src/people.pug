@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/index.css")
+    script(src="https://code.jquery.com/jquery-3.6.0.slim.min.js", integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=", crossorigin="anonymous")
+    title Интранет / Люди / Далер Сухробович Алиёров
+  body
+    header
+      include blocks/nav.pug
+      
+    main
+      section
+        .people.container-fluid
+          .row
+            .col-xs-12
+              include blocks/people__filters.pug
+
+      section
+        .people
+          include blocks/people__list.pug
+
+      section
+        include blocks/footer.pug
+
+      script(src="js/select.js")
+
+  .related

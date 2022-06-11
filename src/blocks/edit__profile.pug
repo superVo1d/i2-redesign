@@ -1,0 +1,572 @@
+include ../mixins/slider
+
+.edit__profile 
+  h1.edit__title Редактирование профиля
+
+  h2#about О себе
+  
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Отчество
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Константинович", value="Константинович")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Ник
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ник", value="Ник")
+
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Аватарка
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-photo-sm")
+                .field__input-file
+                  input(type="file", name="input-photo-sm")#input-photo-sm
+                  img(src="images/photo.jpeg", alt="")#photo-sm
+                  .field__input-label
+                    span 
+                      | Перетащите файл или 
+                      a выберите его в&nbsp;папке 
+                    span 100×100 (при необходимости изображение будет уменьшено автоматически)
+
+        li.field__item
+          .field__name.desktop-visible
+            span Большая фотка
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-photo-lg")
+                .field__input-file.input-photo-lg
+                  input(type="file", name="input-photo-lg")#input-photo-lg
+                  img(src="images/photo_big.jpeg", alt="")#photo-lg
+                  .field__input-label
+                    span 
+                      | Перетащите файл или 
+                      a выберите его в&nbsp;папке 
+                    span 300×400 (при необходимости изображение будет уменьшено автоматически)
+
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Наставник
+          .field__input
+            .field__input-textarea(contenteditable="true", data-placeholder="Наставник") Сергей Кулинкович
+
+        li.field__item
+          .field__name.desktop-visible
+            span О себе
+          .field__input
+            .field__input-textarea(contenteditable="true", data-placeholder="О себе") Горжусь своей семьей! Люблю узнавать и познавать новое, путешествовать, слушать шум морского прибоя, общаться с людьми, смотреть на хорошие картины и фотографии.
+
+        li.field__item
+          .field__name.desktop-visible
+            span Обязанности
+          .field__input
+            .field__input-textarea(contenteditable="true", data-placeholder="Обязанности") Растить и беречь продукты студии. Создавать условия для того, чтобы работа на проектах приносила команде — радость, клиентам — пользу, студии — деньги.
+
+        li.field__item
+          .field__name.desktop-visible
+            span Часы работы
+          .field__input
+            .field__input-textarea(contenteditable="true", data-placeholder="Часы работы") c 10:00 до 21:00 — На сообщения отвечу в любое время
+
+        li.field__item
+          .field__name.desktop-visible
+            span Место проживания
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Место проживания", value="Москва")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Город, где вырос
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Город, где вырос", value="Архангельск")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Гражданство
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Гражданство", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Автомобиль
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Автомобиль", value="")
+
+        li.field__item
+          .field__name
+            span Дата рождения
+          .field__input
+            .field__input-checkbox.field__input-checkbox
+              .field__value 
+                span 19 августа 1994
+              .checkbox.checkbox-lg
+                input(type="checkbox", name="birthday", id="birthday", checked="") 
+                .checkbox-label Не поздравлять меня с&nbsp;днем рождения
+
+        li.field__item
+          .field__name
+            span Размер обуви
+          .field__value 
+            span 40.5
+
+        li.field__item
+          .field__name
+            span Рост
+          .field__value 
+            span 179
+
+        li.field__item
+          .field__name
+            span Правша или левша
+          .field__value 
+            span Я правша
+
+        li.field__item
+          .field__name
+            span Пью
+          .field__value 
+            +slider('55%')
+
+        li.field__item
+          .field__name
+            span Курю
+          .field__value 
+            +slider('5%')
+
+  h2#contacts Контакты
+
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Личная почта
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Личная почта", value="konstantin@gmail.com")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Сайт
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Сайт", value="konstantin.com")
+
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.colname
+            span Соцсети
+                        
+        li.field__item
+          .field__name.desktop-visible
+            span Инстаграм
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть", value="https://instagram.com/")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Вконтакте
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть", value="https://vk.com/id68683823")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Слак
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть")
+
+        li.field__item
+          .field__name.desktop-visible
+            span ЖЖ
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Телеграм
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Твиттер
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Скайп
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Ссылка на соцсеть")
+
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.colname
+            span Телефон
+                        
+        li.field__item
+          .field__name.desktop-visible
+            span Внутренний
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Внутренний телефон", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Домашний
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="Домашний телефон", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Мобильный 1
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="+7 495 123-45-67", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Мобильный 2
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="+7 495 123-45-67", value="")
+
+  h2#education Образование и&nbsp;опыт работы
+
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Опыт работы
+          .field__input
+            .field__input-textarea(contenteditable="true", data-placeholder="Автомобиль")
+
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.colname
+            span Соцсети
+
+        li.field__item
+          .field__name.desktop-visible
+            span Название диплома
+          .field__input.field__input-text
+            input(type="text", placeholder="Диплом о высшем образовании по направлению...", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Документы  без приложений, .jpg
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-diploma")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-diploma
+                  a.field__input-link Загруженный файл
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-diploma2")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-diploma2
+                  span 
+                    | Перетащите файл или 
+                    a(for="input-diploma2") выберите его в&nbsp;папке
+                  </br>
+
+            .field__input-checkbox.field__input-checkbox-inline
+              .field__button
+                button.button.button-secondary Ещё документ
+              .checkbox.checkbox-lg
+                input(type="checkbox", name="document", id="document", checked="")
+                .checkbox-label Нет этого документа
+
+        li.field__item
+          .field__name.desktop-visible
+            span Профиль
+          .field__input.field__input-text
+            input(type="text", placeholder="Диплом о высшем образовании по направлению...", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Профиль
+
+          .field__input
+            .radio-input
+              label.radio
+                input(type="radio", name="education", checked="")
+                span.checkmark
+                .radio-label Дизайн
+
+              label.radio
+                input(type="radio", name="education")
+                span.checkmark
+                .radio-label Технологии
+
+              label.radio
+                input(type="radio", name="education")
+                span.checkmark
+                .radio-label Управление
+
+              label.radio
+                input(type="radio", name="education")
+                span.checkmark
+                .radio-label Другое
+
+  h2#requisites Реквизиты для&nbsp;зарплаты
+
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Реквизиты для&nbsp;перечисления ЗП
+          .field__input
+            .field__input-textarea(contenteditable="true", data-placeholder="Реквизиты для перечисления ЗП")
+
+  h2#documents Личные документы
+
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.colname
+            span Паспорт
+
+        li.field__item
+          .field__name.desktop-visible
+            span Страница с фото, .jpg, .pdf
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-passport")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-passport
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+                  </br>
+
+        li.field__item
+          .field__name.desktop-visible
+            span Страница с пропиской, .jpg, .pdf
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-passport")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-passport
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+                  </br>
+
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.colname
+            span Другие
+
+        li.field__item
+          .field__name.desktop-visible
+            span ИНН, если есть, .jpg, .pdf
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-passport")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-passport
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+                  </br>
+
+        li.field__item
+          .field__name.desktop-visible
+            span СНИЛС, .jpg, .pdf
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-passport")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-passport
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+                  </br>
+            .field__input-checkbox.field__input-checkbox-inline
+              .checkbox.checkbox-lg
+                input(type="checkbox") 
+                .checkbox-label Нет этого документа
+
+        li.field__item
+          .field__name.desktop-visible
+            span Военный билет страница с фотографией, .jpg, .pdf
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-passport")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-passport
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+                  </br>
+
+        li.field__item
+          .field__name.desktop-visible
+            span Фотография на белом фоне, как на паспорт, .jpg, .pdf
+
+          .field__input
+            .field__input-file-drop
+              a.field__input-delete
+              label(for="input-passport")
+                .field__input-file.field__input-doc
+                  input(type="file", name="input-diploma")#input-passport
+                  span 
+                    | Перетащите файл или 
+                    a выберите его в&nbsp;папке
+                  </br>
+
+  h2#privacy Приватность
+  
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name
+            span Какие соцсети показывать на <a>твоей странице</a> сайта студии?
+          .field__input
+            .checkbox-buttons  
+              label(for="checkbox-1").checkbox-button
+                input(type="checkbox", name="checkbox-1", id="checkbox-1", checked="")
+                div.checkbox-label Telegram
+
+              label(for="checkbox-2").checkbox-button
+                input(type="checkbox", name="checkbox-2", id="checkbox-2", checked="")
+                div.checkbox-label Instagram
+
+              label(for="checkbox-3").checkbox-button
+                input(type="checkbox", name="checkbox-3", id="checkbox-3", checked="")
+                div.checkbox-label ВКонтакте
+
+              label(for="checkbox-4").checkbox-button
+                input(type="checkbox", name="checkbox-4", id="checkbox-4", checked="")
+                div.checkbox-label Facebook
+
+              label(for="checkbox-5").checkbox-button
+                input(type="checkbox", name="checkbox-5", id="checkbox-5")
+                div.checkbox-label Slack
+
+              label(for="checkbox-6").checkbox-button
+                input(type="checkbox", name="checkbox-6", id="checkbox-6")
+                div.checkbox-label Skype
+
+              label(for="checkbox-7").checkbox-button
+                input(type="checkbox", name="checkbox-7", id="checkbox-7")
+                div.checkbox-label konstantin.com
+
+  h2#competitions Навыки
+
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Умею
+
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="", value="")
+
+        li.field__item
+          .field__name.desktop-visible
+            span Хочу попробовать
+
+          .field__input
+            .field__input-text
+              input(type="text", placeholder="", value="")
+
+
+  h2#more Дополнительно
+
+  .edit__form
+    .edit__block
+      ul.field
+        li.field__item
+          .field__name.desktop-visible
+            span Показывать
+
+          .field__input
+            .radio-input
+              label.radio
+                input(type="radio", name="show", checked="")
+                span.checkmark
+                .radio-label Дизайн
+
+              label.radio
+                input(type="radio", name="show")
+                span.checkmark
+                .radio-label Технологии
+
+        li.field__item
+          .field__name.desktop-visible
+            span Информировать
+
+          .field__input
+            .field__input-checkbox.field__input-checkbox-inline
+              .checkbox.checkbox-lg
+                input(type="checkbox", checked="") 
+                .checkbox-label Дни рождения
+
+            .field__input-checkbox.field__input-checkbox-inline
+              .checkbox.checkbox-lg
+                input(type="checkbox") 
+                .checkbox-label Изменения информации
+
+        li.field__item
+          .field__name.desktop-visible
+            span Знание языков
+
+          .field__input
+            .field__value 
+              +slider('5%')          
+          

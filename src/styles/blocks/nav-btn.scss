@@ -1,0 +1,40 @@
+.nav-btn {
+  z-index: 1;
+  position: fixed;
+  top: calc(54px + 2rem);
+  left: 1rem;
+  border-radius: 1.08rem;
+  display: inline-block;
+  cursor: pointer;
+  width: 4.08rem;
+  height: 2.16rem;
+  background-color: $color-white;
+  border-bottom: none !important;
+  transition: 200ms background ease-in-out;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
+  &:hover {
+    border-bottom: none !important;
+    background: $color-lightgrey;
+  }
+
+  &-icon {
+    position: relative;
+    top: -0.084rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin: 0 auto;
+    background-size: contain !important;
+
+    &_left {
+      background-image: url('./../images/svg/arrow-left.svg') no-repeat;
+    }
+
+    &_right {
+      background-image: url('./../images/svg/arrow-right.svg') no-repeat;
+    }
+  }
+}

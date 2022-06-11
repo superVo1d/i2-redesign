@@ -1,0 +1,64 @@
+.nav {
+    margin: 0 1rem;
+	border-bottom: 6px solid $color-violet;
+	font-size: 1.12rem;
+    line-height: 1.7408rem;
+    font-variation-settings: "wght" 550;
+    color: $color-violet;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    a {
+        font-size: inherit;
+        color: inherit;
+        border-bottom: none !important;
+    }
+
+    &__profile {
+        padding: 0.96rem;
+    	flex-shrink: 0;
+    	display: flex;
+    }
+
+    &__pic {
+    	height: 1.92rem;
+    	width: 1.92rem;
+    	border-radius: 50%;
+    	overflow: hidden;
+
+    	img {
+    		width: 100%;
+    		height: auto;
+    	}
+    }
+
+    &__breadcrumbs {
+    	display: table;
+    	
+    	> span {
+    		display: table-cell;
+    		vertical-align: middle;
+    	}
+    }
+
+    &__name {
+    	display: table;
+    	margin-left: 0.48rem;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+    	> span {
+    		display: table-cell;
+    		vertical-align: middle;
+    	}
+    }
+
+    &__fullname {
+        @media (max-width: 992px) {
+            display: none !important;
+        }
+    }
+}

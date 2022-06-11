@@ -1,0 +1,16 @@
+.mobile-tabs
+  .mobile-tabs__line
+
+  .mobile-tabs__buttons.container
+    a.tab.active(href="#about") О себе
+    a.tab(href="#company") Компания
+    a.tab(href="#competitions") Навыки
+
+  .mobile-tabs.container
+    .mobile-row.tabs__info.active
+      include profile__about.pug
+      include profile__details.pug
+    .mobile-row.tabs__info
+      include profile__company.pug
+    .mobile-row.tabs__info
+      include profile__competitions.pug
