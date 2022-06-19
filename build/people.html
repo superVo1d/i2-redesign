@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title>Интранет / Люди / Далер Сухробович Алиёров</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav__breadcrumbs"> <span> <a href="/">Интранет</a>&nbsp;/&nbsp;<a href="/">Люди</a></span><span class="nav__fullname">&nbsp;/&nbsp;Константин Константинович Константинопольский</span></div><a class="nav__profile" href="">
+          <div class="nav__pic"><img src="images/photo.jpeg"/></div>
+          <div class="nav__name"> <span>Константин Константинопольский</span></div></a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="people container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="block people__filters">
+                <div class="people__filters-group people-desktop-visible">
+                  <div class="field__input">
+                    <div class="radio-buttons"> 
+                      <label class="radio-button" for="radio-1">
+                        <input type="radio" name="department" id="radio-1" checked=""/>
+                        <div class="radio-label">Все</div>
+                      </label>
+                      <label class="radio-button" for="radio-2">
+                        <input type="radio" name="department" id="radio-2"/>
+                        <div class="radio-label">Студия</div>
+                      </label>
+                      <label class="radio-button" for="radio-3">
+                        <input type="radio" name="department" id="radio-3"/>
+                        <div class="radio-label">Торговля</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="people__filters-group people-desktop-visible">
+                  <div class="field__input">
+                    <div class="radio-buttons"> 
+                      <label class="radio-button" for="radio-4">
+                        <input type="radio" name="occupation" id="radio-4"/>
+                        <div class="radio-label">Все</div>
+                      </label>
+                      <label class="radio-button" for="radio-5">
+                        <input type="radio" name="occupation" id="radio-5" checked=""/>
+                        <div class="radio-label">Клиентский бизнес</div>
+                      </label>
+                      <label class="radio-button" for="radio-6">
+                        <input type="radio" name="occupation" id="radio-6"/>
+                        <div class="radio-label">Творцы</div>
+                      </label>
+                      <label class="radio-button" for="radio-7">
+                        <input type="radio" name="occupation" id="radio-7"/>
+                        <div class="radio-label">Технари</div>
+                      </label>
+                      <label class="radio-button" for="radio-8">
+                        <input type="radio" name="occupation" id="radio-8"/>
+                        <div class="radio-label">Управленцы</div>
+                      </label>
+                      <label class="radio-button" for="radio-9">
+                        <input type="radio" name="occupation" id="radio-9"/>
+                        <div class="radio-label">Москва</div>
+                      </label>
+                      <label class="radio-button" for="radio-10">
+                        <input type="radio" name="occupation" id="radio-10"/>
+                        <div class="radio-label">Киев</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="people__filters-group people-desktop-visible">
+                  <div class="field__input">
+                    <div class="radio-buttons">
+                      <label class="radio-button" for="radio-11">
+                        <input type="radio" name="group" id="radio-11" checked=""/>
+                        <div class="radio-label">Все</div>
+                      </label>
+                      <label class="radio-button" for="radio-12">
+                        <input type="radio" name="group" id="radio-12"/>
+                        <div class="radio-label">Без группы</div>
+                      </label>
+                      <label class="radio-button" for="radio-13">
+                        <input type="radio" name="group" id="radio-13"/>
+                        <div class="radio-label">Аутсорсеры</div>
+                      </label>
+                      <label class="radio-button" for="radio-14">
+                        <input type="radio" name="group" id="radio-14"/>
+                        <div class="radio-label">Продажи</div>
+                      </label>
+                      <label class="radio-button" for="radio-15">
+                        <input type="radio" name="group" id="radio-15"/>
+                        <div class="radio-label">Стратегии и аналитика</div>
+                      </label>
+                      <label class="radio-button" for="radio-16">
+                        <input type="radio" name="group" id="radio-16"/>
+                        <div class="radio-label">Группа Арон (веб, граф)</div>
+                      </label>
+                      <label class="radio-button" for="radio-17">
+                        <input type="radio" name="group" id="radio-17"/>
+                        <div class="radio-label">Группа Каллаур (навигация, граф, реклама)</div>
+                      </label>
+                      <label class="radio-button" for="radio-18">
+                        <input type="radio" name="group" id="radio-18"/>
+                        <div class="radio-label">Группа Кондратцева (не клиентские)</div>
+                      </label>
+                      <label class="radio-button" for="radio-19">
+                        <input type="radio" name="group" id="radio-19"/>
+                        <div class="radio-label">Группа Кравцовой (веб, граф)</div>
+                      </label>
+                      <label class="radio-button" for="radio-20">
+                        <input type="radio" name="group" id="radio-20"/>
+                        <div class="radio-label">Группа Прищепы (пром, граф)</div>
+                      </label>
+                      <label class="radio-button" for="radio-21">
+                        <input type="radio" name="group" id="radio-21"/>
+                        <div class="radio-label">Группа Смирнова (арх)</div>
+                      </label>
+                      <label class="radio-button" for="radio-22">
+                        <input type="radio" name="group" id="radio-22"/>
+                        <div class="radio-label">Группа Ульяновой (граф, навигация)</div>
+                      </label>
+                      <label class="radio-button" for="radio-23">
+                        <input type="radio" name="group" id="radio-23"/>
+                        <div class="radio-label">Группа Шамбы (веб, граф)</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="people__filters-group">
+                  <div class="people__search">
+                    <div class="people__searchbar">
+                      <div class="field__input">
+                        <div class="field__input-text">
+                          <input type="text" placeholder="" value=""/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="people__selectors people-desktop-visible">
+                      <div>
+                        <div class="select-label">Должность</div>
+                        <div class="select select-inline">
+                          <div class="select-options">
+                            <select>
+                              <option>—</option>
+                              <option>администратор</option>
+                              <option>администратор Theatre.ru</option>
+                              <option>аккаунт</option>
+                              <option>аналитик</option>
+                              <option>аналитик-менеджер</option>
+                              <option>арт-директор</option>
+                              <option>архитектор</option>
+                              <option>ассистент менеджера</option>
+                              <option>бариста</option>
+                              <option>бета-тестер</option>
+                              <option>бухгалтер</option>
+                              <option>бухгалтер-кассир</option>
+                              <option>ведущий соцсетей</option>
+                              <option>верстальщик</option>
+                              <option>видеооператор</option>
+                              <option>визуализатор</option>
+                              <option>водитель</option>
+                              <option>главный архитектор</option>
+                              <option>главный бухгалтер</option>
+                              <option>главный по культурным проектам</option>
+                              <option>главный программист</option>
+                              <option>главный редактор</option>
+                              <option>дизайнер</option>
+                              <option>директор</option>
+                              <option>директор клиентского бизнеса</option>
+                              <option>директор по персоналу</option>
+                              <option>директор по продажам</option>
+                              <option>директор по&nbsp;производству</option>
+                              <option>иллюстратор</option>
+                              <option>инженер</option>
+                              <option>инженер авторского надзора</option>
+                              <option>исследователь</option>
+                              <option>картограф</option>
+                              <option>кодер</option>
+                              <option>кондитер</option>
+                              <option>конструктор упаковки</option>
+                              <option>контент-менеджер</option>
+                              <option>копирайтер</option>
+                              <option>курьер</option>
+                              <option>маркетинг-менеджер</option>
+                              <option>менеджер</option>
+                              <option>менеджер на Украине</option>
+                              <option>менеджер по доставке</option>
+                              <option>менеджер по продажам</option>
+                              <option>менеджер по продукту</option>
+                              <option>младший менеджер</option>
+                              <option>офис-менеджер</option>
+                              <option>переводчик</option>
+                              <option>повар</option>
+                              <option>посудомойка</option>
+                              <option>программист</option>
+                              <option>проектировщик</option>
+                              <option>промышленный дизайнер</option>
+                              <option>редактор</option>
+                              <option>режиссер монтажа</option>
+                              <option>руководитель группы</option>
+                              <option>руководитель направления продаж</option>
+                              <option>сайтовод</option>
+                              <option>системный администратор</option>
+                              <option>стратег</option>
+                              <option>суперменеджер</option>
+                              <option>тендерный специалист </option>
+                              <option>технический директор</option>
+                              <option>технолог</option>
+                              <option>транскрибер</option>
+                              <option>уборщица</option>
+                              <option>управляющий</option>
+                              <option>урбанист-стратег</option>
+                              <option>финансовый директор</option>
+                              <option>фотограф</option>
+                              <option>художественный руководитель</option>
+                              <option>шрифтовик</option>
+                              <option>юрист</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="select-label">Сортировать по</div>
+                        <div class="select select-inline">
+                          <div class="select-options">
+                            <select>
+                              <option>—</option>
+                              <option>имени</option>
+                              <option selected="selected">фамилии</option>
+                              <option>отчеству</option>
+                              <option>нику</option>
+                              <option>полу</option>
+                              <option>должности</option>
+                              <option>студийной почте</option>
+                              <option>личной почте</option>
+                              <option>адресу сайта</option>
+                              <option>адресу ЖЖ</option>
+                              <option>адресу Твиттера</option>
+                              <option>логину в Фейсбуке</option>
+                              <option>адресу Инстаграма</option>
+                              <option>адресу ВКонтакте</option>
+                              <option>адресу Телеграма</option>
+                              <option>по Скайпу</option>
+                              <option>логину</option>
+                              <option>«работает с...»</option>
+                              <option>«работает до...»</option>
+                              <option>часам работы</option>
+                              <option>добавочному телефону</option>
+                              <option>мобильному телефону</option>
+                              <option>мобильному телефону 2</option>
+                              <option>домашнему телефону</option>
+                              <option>месту проживания</option>
+                              <option>городу, где вырос</option>
+                              <option>гражданству</option>
+                              <option>дате рождения</option>
+                              <option>автомобилю</option>
+                              <option>размеру обуви</option>
+                              <option>росту</option>
+                              <option>«правша — левша»</option>
+                              <option>«курит — не курит»</option>
+                              <option>«пьет — не пьет»</option>
+                              <option>испытательному сроку</option>
+                              <option>знанию языков</option>
+                              <option>навыкам</option>
+                              <option>хочет попробовать</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field__input">
+                    <div class="field__input-checkbox field__input-checkbox">
+                      <div class="field__value"><span id="search-result">Найдено 134 сотрудника</span></div>
+                      <div class="checkbox checkbox-inline">
+                        <input type="checkbox" name="photo" id="photo" checked=""/>
+                        <div class="checkbox-label">Показать фото</div>
+                      </div>
+                      <div class="checkbox checkbox-inline">
+                        <input type="checkbox" name="online" id="online"/>
+                        <div class="checkbox-label">Сейчас в Студии</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="people">
+          <div class="people__list">
+            <div class="block table">
+              <div class="table__alphabet people-desktop-visible">
+                <ul>
+                  <li>A</li>
+                  <li>Б</li>
+                  <li>В</li>
+                  <li>Г</li>
+                  <li>Д</li>
+                  <li>Е</li>
+                  <li>Ё</li>
+                  <li>Ж</li>
+                  <li>З</li>
+                  <li>И</li>
+                  <li class="active">К</li>
+                  <li>Л</li>
+                  <li>М</li>
+                  <li>Н</li>
+                  <li>О</li>
+                  <li>П</li>
+                  <li>Р</li>
+                  <li>С</li>
+                  <li>Т</li>
+                  <li>У</li>
+                  <li>Ф</li>
+                  <li>Х</li>
+                  <li>Ц</li>
+                  <li>Ч</li>
+                  <li>Ш</li>
+                  <li>Щ</li>
+                  <li>Ы</li>
+                  <li>Э</li>
+                  <li>Ю</li>
+                  <li>Я</li>
+                </ul>
+              </div>
+              <div class="table__main">
+                <div class="table__row table__header">
+                  <div class="table__cell"></div><a class="table__cell active" href="#"> <span>Фамилия</span></a><a class="table__cell" href="#"><span>Имя</span></a><a class="table__cell" href="#"> <span>Ник</span></a><a class="table__cell" href="#"> <span>Должность</span></a><a class="table__cell" href="#"> <span>Студийная почта</span></a><a class="table__cell" href="#"> <span>Работает до..</span></a><a class="table__cell" href="#"> <span>Сайт</span></a><a class="table__cell" href="#"> <span>Доб.</span></a><a class="table__cell" href="#"> <span>Мобильный</span></a>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell-mobile">
+                    <div class="table__cell-photo"></div>
+                    <div class="table__cell-name">Аширбек Абдуллаев</div>
+                  </div>
+                  <div class="table__cell">
+                    <div class="online"></div>
+                  </div>
+                  <div class="table__cell">Абдуллаев</div>
+                  <div class="table__cell">Аширбек</div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell">повар</div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"><a href="tel:+79997978965">+7 999 797-89-65</a></div>
+                </div>
+                <div class="table__row at-home">
+                  <div class="table__cell-mobile">
+                    <div class="table__cell-photo"></div>
+                    <div class="table__cell-name">Абмайкин Глеб</div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell">	Абмайкин
+                    <div class="span label">В бонусном отпуске,<br>вернется через 5 дней</div>
+                  </div>
+                  <div class="table__cell">Глеб</div>
+                  <div class="table__cell">abmaaykin</div>
+                  <div class="table__cell">дизайнер</div>
+                  <div class="table__cell"> <a href="mailto:abmaaykin@design.ru">abmaaykin@design.ru</a></div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"> </div>
+                  <div class="table__cell"> <a href="tel:+79953044075">+7 995 304-40-75</a></div>
+                </div>
+                <div class="table__row probation">
+                  <div class="table__cell-mobile">
+                    <div class="table__cell-photo"></div>
+                    <div class="table__cell-name">Константинопольский Константин</div>
+                  </div>
+                  <div class="table__cell">
+                    <div class="online"></div>
+                  </div>
+                  <div class="table__cell">Константинопольский</div>
+                  <div class="table__cell">Константин</div>
+                  <div class="table__cell">konstantin</div>
+                  <div class="table__cell">Руководитель направления продаж</div>
+                  <div class="table__cell"> <a href="mailto:valera@artlebedev.ru">valera@artlebedev.ru</a></div>
+                  <div class="table__cell">10 января 2022</div>
+                  <div class="table__cell"><a href="https://artlebedev.ru">www</a></div>
+                  <div class="table__cell">254</div>
+                  <div class="table__cell"> <a href="tel:+79055566719">+7 905 556-67-19</a></div>
+                </div>
+                <div class="table__row intern">
+                  <div class="table__cell-mobile">
+                    <div class="table__cell-photo"></div>
+                    <div class="table__cell-name">Константинопольский Константин</div>
+                  </div>
+                  <div class="table__cell">
+                    <div class="online"></div>
+                  </div>
+                  <div class="table__cell">Константинопольский</div>
+                  <div class="table__cell">Константин</div>
+                  <div class="table__cell">konstantin</div>
+                  <div class="table__cell">Руководитель направления продаж</div>
+                  <div class="table__cell"> <a href="mailto:valera@artlebedev.ru">valera@artlebedev.ru</a></div>
+                  <div class="table__cell">10 января 2022</div>
+                  <div class="table__cell"><a href="https://artlebedev.ru">www</a></div>
+                  <div class="table__cell">254</div>
+                  <div class="table__cell"> <a href="tel:+79055566719">+7 905 556-67-19</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 footer">
+              <div> <a href="https://www.artlebedev.ru">Art. Lebedev Studio</a></div>
+              <div>Вся информация в интранете является конфиденциальной и не может быть распространена за пределами компании.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/select.js"></script>
+    </main>
+  </body>
+  <div class="related"></div>
+</html>

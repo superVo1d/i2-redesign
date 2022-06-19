@@ -1,14 +1,14 @@
 .person {
   margin-bottom: 3.36rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 1rem;
     margin-bottom: 1.125rem;
     margin-top: -1.125rem;
   }
 
   .row {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       flex-direction: row-reverse;
     }
   }
@@ -25,7 +25,7 @@
     border: 3px solid $color-bg;
     border-radius: 50%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       right: 0px;
     }
   }
@@ -55,7 +55,7 @@
     margin-right: 2rem;
     flex-shrink: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-right: 0;
     }
     
@@ -79,7 +79,7 @@
     margin-top: .282rem;
 
     > h1 {
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         font-size: 2rem;
       }
     }
@@ -98,7 +98,7 @@
     > span {
       display: inline;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         display: block;
         line-height: 2.6rem;
       }
@@ -122,7 +122,7 @@
   &__card {
     display: flex;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       flex-direction: row-reverse;
     }
   }

@@ -1,0 +1,1 @@
+$(function(){$(".module__close").on("click",function(o){o.preventDefault();const n=$(this);n.closest(".module").css("display","none")}),$(".module__open").on("click",function(o){o.preventDefault();o=$(this).data().module;const n=$("."+o);n.css("display","block")})});

@@ -138,7 +138,7 @@
     }
 
     &__list {
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             margin-right: -1rem;
             margin-left: -1rem;
         }
@@ -187,7 +187,7 @@
             	display: table;
             	height: max-content;
 
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     display: block;
                 }
             }
@@ -323,7 +323,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 0;
         margin-bottom: 1.125rem;
         margin-top: -1.125rem;

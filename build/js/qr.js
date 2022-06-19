@@ -1,0 +1,1 @@
+$(function(){let c=!1;$(".code__close").on("click",e=>{e.preventDefault(),$(".code").css("display","none"),c=!c}),$(".person-code").on("click",e=>{e.preventDefault(),$(".code").css("display","block"),c=!c})});

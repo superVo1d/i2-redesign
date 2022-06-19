@@ -2,7 +2,7 @@
 	margin-top: 9.5rem;
 	overflow: hidden;
 
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		margin-top: 2rem;
 	}
 
@@ -54,7 +54,7 @@
 				border-bottom: none;
 			}
 
-			@media (max-width: 768px) {
+			@media (max-width: 767px) {
 				width: calc(100% - 3.2rem);
 				margin-right: 0;
 				margin-left: 0;

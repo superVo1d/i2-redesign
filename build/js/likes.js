@@ -1,0 +1,1 @@
+$(function(){$(".like-btn").on("click",function(){$(this).hasClass("show")?($(this).find(".likes-list").css("display","none"),$(this).removeClass("show")):($(this).find(".likes-list").css("display","block"),$(this).addClass("show"))})});

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title>Интранет / Люди / Далер Сухробович Алиёров</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav__breadcrumbs"> <span> <a href="/">Интранет</a>&nbsp;/&nbsp;<a href="/">Люди</a></span><span class="nav__fullname">&nbsp;/&nbsp;Константин Константинович Константинопольский</span></div><a class="nav__profile" href="">
+          <div class="nav__pic"><img src="images/photo.jpeg"/></div>
+          <div class="nav__name"> <span>Константин Константинопольский</span></div></a>
+      </div>
+    </header>
+    <main><a class="nav-btn" href="#">
+        <div class="nav-btn-icon nav-btn-icon_left"></div></a>
+      <section>
+        <div class="edit container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-lg-3 desktop-visible">
+              <div class="edit__nav">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-lg-9">
+              <div class="edit__profile"> 
+                <h1 class="edit__title">Редактирование профиля</h1>
+                <h2 id="about">О себе</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Отчество</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Константинович" value="Константинович"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Ник</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ник" value="Ник"/>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Аватарка</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-photo-sm">
+                              <div class="field__input-file">
+                                <input type="file" name="input-photo-sm" id="input-photo-sm"/><img src="images/photo.jpeg" alt="" id="photo-sm"/>
+                                <div class="field__input-label"><span>
+                                     Перетащите файл или <a>выберите его в&nbsp;папке </a></span><span>100×100 (при необходимости изображение будет уменьшено автоматически)</span></div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Большая фотка</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-photo-lg">
+                              <div class="field__input-file input-photo-lg">
+                                <input type="file" name="input-photo-lg" id="input-photo-lg"/><img src="images/photo_big.jpeg" alt="" id="photo-lg"/>
+                                <div class="field__input-label"><span>
+                                     Перетащите файл или <a>выберите его в&nbsp;папке </a></span><span>300×400 (при необходимости изображение будет уменьшено автоматически)</span></div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Наставник</span></div>
+                        <div class="field__input">
+                          <div class="field__input-textarea" contenteditable="true" data-placeholder="Наставник">Сергей Кулинкович</div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>О себе</span></div>
+                        <div class="field__input">
+                          <div class="field__input-textarea" contenteditable="true" data-placeholder="О себе">Горжусь своей семьей! Люблю узнавать и познавать новое, путешествовать, слушать шум морского прибоя, общаться с людьми, смотреть на хорошие картины и фотографии.</div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Обязанности</span></div>
+                        <div class="field__input">
+                          <div class="field__input-textarea" contenteditable="true" data-placeholder="Обязанности">Растить и беречь продукты студии. Создавать условия для того, чтобы работа на проектах приносила команде — радость, клиентам — пользу, студии — деньги.</div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Часы работы</span></div>
+                        <div class="field__input">
+                          <div class="field__input-textarea" contenteditable="true" data-placeholder="Часы работы">c 10:00 до 21:00 — На сообщения отвечу в любое время</div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Место проживания</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Место проживания" value="Москва"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Город, где вырос</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Город, где вырос" value="Архангельск"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Гражданство</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Гражданство" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Автомобиль</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Автомобиль" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name"><span>Дата рождения</span></div>
+                        <div class="field__input">
+                          <div class="field__input-checkbox field__input-checkbox">
+                            <div class="field__value"> <span>19 августа 1994</span></div>
+                            <div class="checkbox checkbox-lg">
+                              <input type="checkbox" name="birthday" id="birthday" checked=""/>
+                              <div class="checkbox-label">Не поздравлять меня с&nbsp;днем рождения</div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name"><span>Размер обуви</span></div>
+                        <div class="field__value"> <span>40.5</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name"><span>Рост</span></div>
+                        <div class="field__value"> <span>179</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name"><span>Правша или левша</span></div>
+                        <div class="field__value"> <span>Я правша</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name"><span>Пью</span></div>
+                        <div class="field__value"> 
+                                        <div class="slider">
+                                          <div class="slider__line">
+                                            <div class="slider__dot" style="left:55%;"></div>
+                                          </div>
+                                        </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name"><span>Курю</span></div>
+                        <div class="field__value"> 
+                                        <div class="slider">
+                                          <div class="slider__line">
+                                            <div class="slider__dot" style="left:5%;"></div>
+                                          </div>
+                                        </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="contacts">Контакты</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Личная почта</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Личная почта" value="konstantin@gmail.com"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Сайт</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Сайт" value="konstantin.com"/>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name colname"><span>Соцсети</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Инстаграм</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть" value="https://instagram.com/"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Вконтакте</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть" value="https://vk.com/id68683823"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Слак</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>ЖЖ</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Телеграм</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Твиттер</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть"/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Скайп</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Ссылка на соцсеть"/>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name colname"><span>Телефон</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Внутренний</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Внутренний телефон" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Домашний</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="Домашний телефон" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Мобильный 1</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="+7 495 123-45-67" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Мобильный 2</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="+7 495 123-45-67" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="education">Образование и&nbsp;опыт работы</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Опыт работы</span></div>
+                        <div class="field__input">
+                          <div class="field__input-textarea" contenteditable="true" data-placeholder="Автомобиль"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name colname"><span>Соцсети</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Название диплома</span></div>
+                        <div class="field__input field__input-text">
+                          <input type="text" placeholder="Диплом о высшем образовании по направлению..." value=""/>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Документы  без приложений, .jpg</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-diploma">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-diploma"/><a class="field__input-link">Загруженный файл</a><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-diploma2">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-diploma2"/><span>
+                                   Перетащите файл или <a for="input-diploma2">выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="field__input-checkbox field__input-checkbox-inline">
+                            <div class="field__button">
+                              <button class="button button-secondary">Ещё документ</button>
+                            </div>
+                            <div class="checkbox checkbox-lg">
+                              <input type="checkbox" name="document" id="document" checked=""/>
+                              <div class="checkbox-label">Нет этого документа</div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Профиль</span></div>
+                        <div class="field__input field__input-text">
+                          <input type="text" placeholder="Диплом о высшем образовании по направлению..." value=""/>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Профиль</span></div>
+                        <div class="field__input">
+                          <div class="radio-input">
+                            <label class="radio">
+                              <input type="radio" name="education" checked=""/><span class="checkmark"></span>
+                              <div class="radio-label">Дизайн</div>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="education"/><span class="checkmark"></span>
+                              <div class="radio-label">Технологии</div>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="education"/><span class="checkmark"></span>
+                              <div class="radio-label">Управление</div>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="education"/><span class="checkmark"></span>
+                              <div class="radio-label">Другое</div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="requisites">Реквизиты для&nbsp;зарплаты</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Реквизиты для&nbsp;перечисления ЗП</span></div>
+                        <div class="field__input">
+                          <div class="field__input-textarea" contenteditable="true" data-placeholder="Реквизиты для перечисления ЗП"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="documents">Личные документы</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name colname"><span>Паспорт</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Страница с фото, .jpg, .pdf</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-passport">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-passport"/><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Страница с пропиской, .jpg, .pdf</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-passport">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-passport"/><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name colname"><span>Другие</span></div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>ИНН, если есть, .jpg, .pdf</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-passport">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-passport"/><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>СНИЛС, .jpg, .pdf</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-passport">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-passport"/><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="field__input-checkbox field__input-checkbox-inline">
+                            <div class="checkbox checkbox-lg">
+                              <input type="checkbox"/>
+                              <div class="checkbox-label">Нет этого документа</div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Военный билет страница с фотографией, .jpg, .pdf</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-passport">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-passport"/><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Фотография на белом фоне, как на паспорт, .jpg, .pdf</span></div>
+                        <div class="field__input">
+                          <div class="field__input-file-drop"><a class="field__input-delete"></a>
+                            <label for="input-passport">
+                              <div class="field__input-file field__input-doc">
+                                <input type="file" name="input-diploma" id="input-passport"/><span>
+                                   Перетащите файл или <a>выберите его в&nbsp;папке</a></span></br>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="privacy">Приватность</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name"><span>Какие соцсети показывать на <a>твоей странице</a> сайта студии?</span></div>
+                        <div class="field__input">
+                          <div class="checkbox-buttons"> 
+                            <label class="checkbox-button" for="checkbox-1">
+                              <input type="checkbox" name="checkbox-1" id="checkbox-1" checked=""/>
+                              <div class="checkbox-label">Telegram</div>
+                            </label>
+                            <label class="checkbox-button" for="checkbox-2">
+                              <input type="checkbox" name="checkbox-2" id="checkbox-2" checked=""/>
+                              <div class="checkbox-label">Instagram</div>
+                            </label>
+                            <label class="checkbox-button" for="checkbox-3">
+                              <input type="checkbox" name="checkbox-3" id="checkbox-3" checked=""/>
+                              <div class="checkbox-label">ВКонтакте</div>
+                            </label>
+                            <label class="checkbox-button" for="checkbox-4">
+                              <input type="checkbox" name="checkbox-4" id="checkbox-4" checked=""/>
+                              <div class="checkbox-label">Facebook</div>
+                            </label>
+                            <label class="checkbox-button" for="checkbox-5">
+                              <input type="checkbox" name="checkbox-5" id="checkbox-5"/>
+                              <div class="checkbox-label">Slack</div>
+                            </label>
+                            <label class="checkbox-button" for="checkbox-6">
+                              <input type="checkbox" name="checkbox-6" id="checkbox-6"/>
+                              <div class="checkbox-label">Skype</div>
+                            </label>
+                            <label class="checkbox-button" for="checkbox-7">
+                              <input type="checkbox" name="checkbox-7" id="checkbox-7"/>
+                              <div class="checkbox-label">konstantin.com</div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="competitions">Навыки</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Умею</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Хочу попробовать</span></div>
+                        <div class="field__input">
+                          <div class="field__input-text">
+                            <input type="text" placeholder="" value=""/>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 id="more">Дополнительно</h2>
+                <div class="edit__form">
+                  <div class="edit__block">
+                    <ul class="field">
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Показывать</span></div>
+                        <div class="field__input">
+                          <div class="radio-input">
+                            <label class="radio">
+                              <input type="radio" name="show" checked=""/><span class="checkmark"></span>
+                              <div class="radio-label">Дизайн</div>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="show"/><span class="checkmark"></span>
+                              <div class="radio-label">Технологии</div>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Информировать</span></div>
+                        <div class="field__input">
+                          <div class="field__input-checkbox field__input-checkbox-inline">
+                            <div class="checkbox checkbox-lg">
+                              <input type="checkbox" checked=""/>
+                              <div class="checkbox-label">Дни рождения</div>
+                            </div>
+                          </div>
+                          <div class="field__input-checkbox field__input-checkbox-inline">
+                            <div class="checkbox checkbox-lg">
+                              <input type="checkbox"/>
+                              <div class="checkbox-label">Изменения информации</div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="field__item">
+                        <div class="field__name desktop-visible"><span>Знание языков</span></div>
+                        <div class="field__input">
+                          <div class="field__value"> 
+                                          <div class="slider">
+                                            <div class="slider__line">
+                                              <div class="slider__dot" style="left:5%;"></div>
+                                            </div>
+                                          </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row button_save__wrapper">
+            <div class="col-xs-12">
+              <button class="button button_save">Сохранить</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/nav-btn.js"></script>
+    <script src="js/edit-nav.js"></script>
+  </body>
+  <div class="related"></div>
+</html>

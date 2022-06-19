@@ -40,7 +40,7 @@ h1 {
   line-height: 2.56rem;
   margin-bottom: 1.28rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 2.4rem;
     font-variation-settings: "wght" 550;
     line-height: 2.56rem;
@@ -54,7 +54,7 @@ h2 {
   line-height: 2.56rem;
   margin-bottom: 1.28rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 2rem;
     font-variation-settings: "wght" 550;
     line-height: 2.0625rem;
@@ -485,7 +485,7 @@ a {
 }
 
 .row {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin: 0 !important;
   }
 }
@@ -501,7 +501,7 @@ a {
 .mobile-visible {
   display: none !important;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: block !important;
   }
 }

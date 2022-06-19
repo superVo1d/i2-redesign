@@ -63,7 +63,7 @@
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         flex-direction: column;
 
         >div:not(:first-child) {
@@ -99,7 +99,7 @@
       align-items: center;
       position: relative;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         border-radius: $border-radius / 4;
       }
 
@@ -135,7 +135,7 @@
           width: 100%;
           max-width: calc(100% - 4rem);
 
-          @media (max-width: 768px) {
+          @media (max-width: 767px) {
             border-radius: $border-radius / 4;
           }
         }
