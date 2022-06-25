@@ -6,8 +6,10 @@ mixin profile__main(show)
 
       .mobile-visible
         .block_photo__header
-          h1 Константин Константинович Константинопольский
-          include ../blocks/like-btn 
+          .block_photo__gradient(style="background:linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.8) 77%, rgb(0, 0, 0) 100%);")
+          .block_photo__content(style="background: rgb(0, 0, 0);")
+            h1 Константин Константинович Константинопольский
+            include ../blocks/like-btn 
 
     if show
       button.button.button_edit

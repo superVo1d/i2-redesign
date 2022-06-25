@@ -131,6 +131,11 @@ a:hover {
     border-bottom: 1px solid #000!important
 }
 
+.show-more-elipsis:hover {
+    color: #ff2e00;
+    cursor: pointer
+}
+
 .button {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -174,6 +179,47 @@ a:hover {
 
 .button-secondary:active:focus {
     background: 0 0
+}
+
+.button-delete {
+    background: 0 0;
+    color: #ff2e00;
+    box-shadow: 0 0 0 2px #ff2e00 inset
+}
+
+.button.disabled {
+    background: #c5c5c5!important;
+    color: #fff;
+    cursor: initial
+}
+
+.button-2 {
+    display: inline-block;
+    font-size: 1.12rem;
+    line-height: 1.7408rem;
+    padding: .4rem 1.2rem;
+    border-radius: 1rem;
+    width: auto;
+    margin-bottom: 0;
+    margin-top: .8rem
+}
+
+.button-3 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 1.12rem;
+    line-height: 1.7408rem;
+    padding: .4rem 1.2rem;
+    border-radius: 1rem;
+    width: auto;
+    margin-bottom: 0;
+    margin-top: .8rem;
+    box-shadow: 0 0 0 1px #c5c5c5 inset
+}
+
+.button-3:hover {
+    background: rgba(0,0,0,.05)
 }
 
 .checkbox {
@@ -429,6 +475,8 @@ a:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    line-height: 2.8rem;
+    height: 2.8rem;
     width: 18rem;
     padding: 0 .8rem;
     height: 2.8rem;
@@ -493,6 +541,8 @@ a:hover {
     padding: 0 .8rem;
     padding-right: 0;
     position: relative;
+    line-height: 2.8rem;
+    height: 2.8rem;
     z-index: 101;
     cursor: pointer
 }
@@ -1296,19 +1346,32 @@ a:hover {
 .profile__main .block_photo__header {
     position: absolute;
     bottom: 0;
-    color: #fff;
-    margin: 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between
+    color: #fff
 }
 
-.profile__main .block_photo__header>h1 {
+.profile__main .block_photo__header .block_photo__gradient {
+    display: block;
+    width: 100%;
+    height: 250px;
+    max-height: 20vw
+}
+
+.profile__main .block_photo__header .block_photo__content {
+    position: relative;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0 0 2rem 2rem
+}
+
+.profile__main .block_photo__header h1 {
+    z-index: 1;
     margin-right: calc(38px + 1rem)
 }
 
 @media (max-width:450px) {
-    .profile__main .block_photo__header>h1 {
+    .profile__main .block_photo__header h1 {
         margin-right: 0;
         margin-bottom: 0
     }
@@ -1627,7 +1690,7 @@ a:hover {
 }
 
 .field__input-text>input {
-    width: calc(100% - 1.6rem);
+    width: 100%;
     border: none;
     outline: 0;
     padding: 0 .8rem;
@@ -1681,11 +1744,9 @@ a:hover {
     opacity: .5;
     flex-basis: 40%;
     flex-shrink: 0;
-    margin-right: 1rem
-}
-
-.field__name>span {
-    vertical-align: -webkit-baseline-middle
+    margin-right: 1rem;
+    padding-top: .5296rem;
+    padding-bottom: .5296rem
 }
 
 .field__value {
@@ -1694,7 +1755,9 @@ a:hover {
     flex-basis: 60%;
     margin-left: .8rem;
     margin-right: .8rem;
-    position: relative
+    position: relative;
+    padding-top: .5296rem;
+    padding-bottom: .5296rem
 }
 
 .field__value a,.field__value>span {
@@ -2292,6 +2355,7 @@ a:hover {
 
 .nav__profile {
     padding: .96rem;
+    padding-right: 0;
     flex-shrink: 0;
     display: flex
 }
@@ -2312,17 +2376,24 @@ a:hover {
     display: table
 }
 
-.nav__breadcrumbs>span {
+.nav__breadcrumbs a,.nav__breadcrumbs div,.nav__breadcrumbs span {
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    line-height: 1.7408rem
+}
+
+@media (max-width:900px) {
+    .nav__breadcrumbs div:last-of-type,.nav__breadcrumbs span:last-of-type {
+        display: none
+    }
 }
 
 .nav__name {
     display: table;
-    margin-left: .48rem
+    padding-left: .48rem
 }
 
-@media (max-width:600px) {
+@media (max-width:900px) {
     .nav__name {
         display: none
     }
@@ -2759,6 +2830,7 @@ a:hover {
         margin-top: 2rem;
         position: absolute;
         right: 0;
+        margin-right: 1rem;
         top: 0
     }
 }
@@ -2854,8 +2926,11 @@ a:hover {
 
 .like-btn .likes-list ul {
     overflow-y: auto;
-    max-height: 165px;
-    padding-bottom: .8rem
+    max-height: 165px
+}
+
+.like-btn .likes-list ul li:last-child {
+    margin-bottom: .8rem
 }
 
 .like-btn .likes-list ul::-webkit-scrollbar {
@@ -3018,6 +3093,10 @@ a:hover {
     margin-bottom: 1.5rem
 }
 
+.epitaph:last-child {
+    margin-bottom: 0
+}
+
 .epitaph__name {
     font-variation-settings: "wght" 550;
     margin-bottom: .4rem
@@ -3040,24 +3119,11 @@ a:hover {
     box-shadow: 0 0 0 2px #000 inset
 }
 
+.epitaph__input {
+    margin-top: 1.5rem
+}
+
 .epitaph__edit {
     display: flex;
     justify-content: space-between
-}
-
-.epitaph .button {
-    display: inline-block;
-    font-size: 1.12rem;
-    line-height: 1.7408rem;
-    padding: .4rem 1.2rem;
-    border-radius: 1rem;
-    width: auto;
-    margin-bottom: 0;
-    margin-top: .8rem
-}
-
-.epitaph .button-delete {
-    background: 0 0;
-    color: #ff2e00;
-    box-shadow: 0 0 0 2px #ff2e00 inset
 }

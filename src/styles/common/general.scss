@@ -83,6 +83,13 @@ a {
     border-bottom: 1px solid $color-black !important;
   }
 }
+
+.show-more-elipsis {
+  &:hover {
+    color: $color-red;
+    cursor: pointer;
+  }
+}
     
 .button {
   user-select: none;
@@ -124,6 +131,48 @@ a {
     &:active:focus {
       background: transparent;
     }
+  }
+
+  &-delete {
+    background: transparent;
+    color: $color-red;
+    box-shadow: 0 0 0 2px $color-red inset;
+
+  }
+
+  &.disabled {
+    background: $color-mediumgrey !important;
+    color: $color-white;
+    cursor: initial;
+  }
+}
+
+.button-2 {
+  display: inline-block;
+  font-size: 1.12rem;
+  line-height: 1.7408rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: $border-radius / 2;
+  width: auto;
+  margin-bottom: 0;
+  margin-top: 0.8rem;
+}
+
+.button-3 {
+  background: $color-white;
+  color: $color-black;
+  display: inline-block;
+  font-size: 1.12rem;
+  line-height: 1.7408rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: $border-radius / 2;
+  width: auto;
+  margin-bottom: 0;
+  margin-top: 0.8rem;
+  box-shadow: 0 0 0 1px $color-mediumgrey inset;
+
+  &:hover {
+    background: $color-lightgrey;
   }
 }
 
@@ -378,6 +427,8 @@ a {
     border-radius: $border-radius / 4;
     background-color: $color-white;
     user-select: none;
+    line-height: 2.8rem;
+    height: 2.8rem;
 
     /* Style the arrow inside the select element: */
     &:after {
@@ -442,6 +493,8 @@ a {
         padding: 0 0.8rem;
         padding-right: 0;
         position: relative;
+        line-height: 2.8rem;
+        height: 2.8rem;
         z-index: 101;
         cursor: pointer;
       }

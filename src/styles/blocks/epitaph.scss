@@ -1,13 +1,13 @@
 .epitaph {
 	margin-bottom: 1.5rem;
 
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 	&__name {
 		font-variation-settings: "wght" 550;
 		margin-bottom: 0.4rem;
-	}
-
-	&__comments {
-		
 	}
 	      
 	&__textarea {
@@ -26,31 +26,13 @@
 	    	box-shadow: 0 0 0 2px $color-black inset;
 	    }
 	}
+
+	&__input {
+		margin-top: 1.5rem;
+	}
 	          
 	&__edit {
 		display: flex;
 		justify-content: space-between;
 	}
-
-   .button {
-   		display: inline-block;
-   		font-size: 1.12rem;
-		line-height: 1.7408rem;
-		padding: 0.4rem 1.2rem;
-		border-radius: $border-radius / 2;
-		width: auto;
-		margin-bottom: 0;
-		margin-top: 0.8rem;
-
-	   	&-alter {
-	   		
-	   	}
-	    
-	    &-delete {
-	    	background: transparent;
-	    	color: $color-red;
-	    	box-shadow: 0 0 0 2px $color-red inset;
-
-	    }
-    }
 }

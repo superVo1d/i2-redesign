@@ -173,7 +173,7 @@
 
     &-text {
       > input {
-        width: calc(100% - 0.8rem * 2);
+        width: 100%;
         border: none;
         outline: none;
         padding: 0 0.8rem;
@@ -230,10 +230,8 @@
     flex-basis: 40%;
     flex-shrink: 0;
     margin-right: 1rem;
-
-    > span {
-      vertical-align: -webkit-baseline-middle;
-    }
+    padding-top: .5296rem;
+    padding-bottom: .5296rem;
   }
 
   &__value {
@@ -243,6 +241,8 @@
     margin-left: .8rem;
     margin-right: .8rem;
     position: relative;
+    padding-top: .5296rem;
+    padding-bottom: .5296rem;
 
     > span, a {
       vertical-align: -webkit-baseline-middle;

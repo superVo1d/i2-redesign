@@ -1,10 +1,11 @@
 .nav
 	.nav__breadcrumbs 
-		span 
-			a(href="/") Интранет
-			| &nbsp;/&nbsp;
-			a(href="/") Люди
-		span.nav__fullname &nbsp;/&nbsp;Константин Константинович Константинопольский
+		a(href='/') Интранет
+		span.nav__break &nbsp;/ 
+		a(href='/people/') Люди
+		span.nav__break &nbsp;/ 
+		div.nav__title Константин Константинович Константинопольский
+
 	a(href="").nav__profile
 		.nav__pic
 			img(src="images/photo.jpeg")

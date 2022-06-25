@@ -17,6 +17,7 @@
 
     &__profile {
         padding: 0.96rem;
+        padding-right: 0;
     	flex-shrink: 0;
     	display: flex;
     }
@@ -36,17 +37,25 @@
     &__breadcrumbs {
     	display: table;
     	
-    	> span {
+    	span, div, a {
     		display: table-cell;
     		vertical-align: middle;
+            line-height: 1.7408rem;
     	}
+
+        div:last-of-type,
+        span:last-of-type {
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
     }
 
     &__name {
     	display: table;
-    	margin-left: 0.48rem;
+    	padding-left: 0.48rem;
 
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
             display: none;
         }
 
