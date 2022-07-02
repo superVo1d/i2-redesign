@@ -137,7 +137,12 @@ a {
     background: transparent;
     color: $color-red;
     box-shadow: 0 0 0 2px $color-red inset;
-
+    border-bottom: none !important;
+    &:hover, &:focus, &:active:focus {
+      background: transparent;
+      border-bottom: none !important;
+      color: $color-red;
+    }
   }
 
   &.disabled {
@@ -288,6 +293,7 @@ a {
     width: 1.7408rem;
     background-color: $color-white;
     border-radius: 50%;
+    flex-shrink: 0;
   }
 
   .checkmark:after {

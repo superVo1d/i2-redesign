@@ -221,6 +221,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__name {
@@ -244,8 +248,8 @@
     padding-top: .5296rem;
     padding-bottom: .5296rem;
 
-    > span, a {
-      vertical-align: -webkit-baseline-middle;
+    span {
+      word-break: break-word;
     }
   }
 }
