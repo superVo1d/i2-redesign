@@ -201,7 +201,7 @@
                     display: flex;
                 }
 
-                &.probation {
+                &.trial {
                     color: $color-green;
 
                     a {
@@ -214,7 +214,7 @@
                     }
                 }
 
-                &.at-home {
+                &.disabled {
                     color: $color-grey;
 
                     a {
@@ -227,7 +227,7 @@
                     }
                 }
 
-                &.intern {
+                &.probationer {
                     color: $color-orange;
 
                     a {
@@ -264,9 +264,7 @@
                 text-decoration: none !important;
                 position: relative;
 
-                @media (max-width: 1350px) {
-                    display: none;
-                }
+                
 
                 &-mobile {
                     display: none;
@@ -295,8 +293,9 @@
             	position: sticky;
             	top: 0;
                 font-variation-settings: "wght" 550;
+                z-index: 1;
 
-                .table__cell.active > span {
+                .table__cell.active span {
                     color: $color-blue;
                     position: relative;
 
